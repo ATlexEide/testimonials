@@ -103,13 +103,12 @@ img {
   opacity: 0.5;
 }
 .p-1 {
-  font-size: 1.5rem;
-  line-height: 1;
-  letter-spacing: -0.05rem;
+  font-size: 1rem;
+  font-weight: 600;
   padding: 3% 0;
 }
 .p-2 {
-  font-size: 1rem;
+  font-weight: 500;
   opacity: 70%;
 }
 .attribution {
