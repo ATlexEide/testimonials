@@ -13,6 +13,7 @@
 }
 body {
   font-family: "Barlow Semi Condensed", sans-serif;
+  font-size: 13px;
 }
 main {
   width: 100vw;
@@ -31,6 +32,7 @@ article {
   width: 100%;
   padding: 30px;
 }
+/* DANIEL */
 article:first-child {
   background-color: var(--violet);
   background-image: url(./images/bg-pattern-quotation.svg);
@@ -39,42 +41,43 @@ article:first-child {
   background-origin: content-box;
   background-size: 25%;
 }
-article:first-child .p-1 {
-  color: var(--light-gray);
-  font-size: 1.5rem;
-}
+article:first-child .p-1,
 article:first-child .p-2 {
   color: var(--light-gray);
 }
 article:first-child img {
   border: 2px solid rgba(173, 216, 230, 0.485);
 }
+/* JONATHAN */
 article:nth-child(2) {
   background-color: var(--grayish-blue);
 }
-article:nth-child(2) .p-1 {
-  color: var(--white);
-}
+article:nth-child(2) .p-1,
 article:nth-child(2) .p-2 {
   color: var(--white);
 }
+/* PATRICK */
 article:nth-child(2n + 4) {
   background-color: var(--blackish-blue);
 }
 article:nth-child(2n + 4) img {
   border: 2px solid rgba(37, 37, 204, 0.589);
 }
-article:nth-child(2n + 4) .p-1 {
-  color: var(--light-grayish-blue);
-}
+article:nth-child(2n + 4) .p-1,
 article:nth-child(2n + 4) .p-2 {
   color: var(--light-grayish-blue);
 }
+/* KIRA, JEANETTE */
 article:nth-child(2n + 5) {
   background-color: var(--white);
 }
 article:nth-child(2n + 5) img {
   border: 2px solid rgba(90, 90, 90, 0.819);
+}
+article:nth-child(2n + 5) .p-1,
+article:nth-child(2n + 5) .p-2,
+article:nth-child(2n + 5) .user-info {
+  color: var(--blackish-blue);
 }
 img {
   width: 80%;
@@ -89,12 +92,11 @@ img {
   justify-content: center;
   flex-direction: column;
 }
-.name {
-  color: var(--white);
-}
 .verified {
-  color: var(--white);
-  opacity: 50%;
+  opacity: 0.5;
+}
+.p-1 {
+  font-size: 1.5rem;
 }
 .p-2 {
   font-size: 1rem;
