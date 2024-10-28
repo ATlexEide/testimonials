@@ -27,10 +27,18 @@ section {
 article {
   border-radius: 10px;
   width: 100%;
-  padding: 20px;
+  padding: 30px;
 }
 article:first-child {
   background-color: var(--violet);
+  background-image: url(./images/bg-pattern-quotation.svg);
+  background-repeat: no-repeat;
+  background-position: top right;
+  background-origin: content-box;
+  background-size: 25%;
+}
+article:first-child img {
+  border: 2px solid rgba(173, 216, 230, 0.485);
 }
 article:nth-child(2) {
   background-color: var(--grayish-blue);
@@ -38,19 +46,26 @@ article:nth-child(2) {
 article:nth-child(2n + 4) {
   background-color: var(--blackish-blue);
 }
+article:nth-child(2n + 4) img {
+  border: 2px solid rgba(37, 37, 204, 0.589);
+}
 article:nth-child(2n + 5) {
   background-color: var(--white);
 }
+article:nth-child(2n + 5) img {
+  border: 2px solid rgba(90, 90, 90, 0.819);
+}
 img {
+  width: 80%;
   border-radius: 100%;
 }
 .user {
   display: flex;
 }
 .user-info {
-  font-size: 0.5rem;
+  font-size: 0.7rem;
   display: flex;
-  display: flex;
+  justify-content: center;
   flex-direction: column;
 }
 .name {
@@ -58,7 +73,13 @@ img {
 }
 .verified {
   color: var(--white);
-  opacity: 0.7;
+  opacity: 70%;
+}
+.p-1 {
+  font-size: 1.5rem;
+}
+.p-2 {
+  font-size: 1rem;
 }
 .attribution {
   font-size: 11px;
